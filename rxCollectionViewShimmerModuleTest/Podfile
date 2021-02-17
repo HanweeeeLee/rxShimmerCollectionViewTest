@@ -7,9 +7,10 @@ target 'rxCollectionViewShimmerModuleTest' do
 pod 'Alamofire', '~> 5.2'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'SnapKit', '~> 5.0.0'
+  pod 'FlexibleModelProtocol', '~> 1.1'
 
-  pod 'RxSwift', '~> 5'
-  pod 'RxCocoa', '~> 5'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
   # Pods for rxCollectionViewShimmerModuleTest
 

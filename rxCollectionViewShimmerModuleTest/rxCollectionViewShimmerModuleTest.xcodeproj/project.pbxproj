@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,12 @@
 		789D13CC25DD334100F592CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789D13CA25DD334100F592CD /* Main.storyboard */; };
 		789D13CE25DD334300F592CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789D13CD25DD334300F592CD /* Assets.xcassets */; };
 		789D13D125DD334300F592CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789D13CF25DD334300F592CD /* LaunchScreen.storyboard */; };
+		789D13E725DD35FC00F592CD /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789D13E225DD35FC00F592CD /* RepoModel.swift */; };
+		789D13E825DD35FC00F592CD /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789D13E425DD35FC00F592CD /* Define.swift */; };
+		789D13E925DD35FC00F592CD /* DataApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789D13E625DD35FC00F592CD /* DataApiManager.swift */; };
+		789D13EC25DD363300F592CD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789D13EB25DD363300F592CD /* ViewModel.swift */; };
+		789D13F625DD385200F592CD /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789D13F425DD385200F592CD /* MyCell.swift */; };
+		789D13F725DD385200F592CD /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 789D13F525DD385200F592CD /* MyCell.xib */; };
 		824440E69AA03019D3C2E4FF /* Pods_rxCollectionViewShimmerModuleTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D22A458F46451B41175B0C /* Pods_rxCollectionViewShimmerModuleTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +32,12 @@
 		789D13CD25DD334300F592CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		789D13D025DD334300F592CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		789D13D225DD334300F592CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		789D13E225DD35FC00F592CD /* RepoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
+		789D13E425DD35FC00F592CD /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		789D13E625DD35FC00F592CD /* DataApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataApiManager.swift; sourceTree = "<group>"; };
+		789D13EB25DD363300F592CD /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		789D13F425DD385200F592CD /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		789D13F525DD385200F592CD /* MyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
 		876FB1B9837D4B4B57B6625C /* Pods-rxCollectionViewShimmerModuleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rxCollectionViewShimmerModuleTest.debug.xcconfig"; path = "Target Support Files/Pods-rxCollectionViewShimmerModuleTest/Pods-rxCollectionViewShimmerModuleTest.debug.xcconfig"; sourceTree = "<group>"; };
 		E0D22A458F46451B41175B0C /* Pods_rxCollectionViewShimmerModuleTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rxCollectionViewShimmerModuleTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -48,7 +60,6 @@
 				876FB1B9837D4B4B57B6625C /* Pods-rxCollectionViewShimmerModuleTest.debug.xcconfig */,
 				662846A23AA9ACA2A8555419 /* Pods-rxCollectionViewShimmerModuleTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +92,45 @@
 		789D13C325DD334100F592CD /* rxCollectionViewShimmerModuleTest */ = {
 			isa = PBXGroup;
 			children = (
+				789D13E325DD35FC00F592CD /* Define */,
+				789D13E525DD35FC00F592CD /* Manager */,
+				789D13E125DD35FC00F592CD /* Model */,
 				789D13C425DD334100F592CD /* AppDelegate.swift */,
 				789D13C625DD334100F592CD /* SceneDelegate.swift */,
 				789D13C825DD334100F592CD /* ViewController.swift */,
+				789D13EB25DD363300F592CD /* ViewModel.swift */,
 				789D13CA25DD334100F592CD /* Main.storyboard */,
 				789D13CD25DD334300F592CD /* Assets.xcassets */,
 				789D13CF25DD334300F592CD /* LaunchScreen.storyboard */,
 				789D13D225DD334300F592CD /* Info.plist */,
+				789D13F425DD385200F592CD /* MyCell.swift */,
+				789D13F525DD385200F592CD /* MyCell.xib */,
 			);
 			path = rxCollectionViewShimmerModuleTest;
+			sourceTree = "<group>";
+		};
+		789D13E125DD35FC00F592CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				789D13E225DD35FC00F592CD /* RepoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		789D13E325DD35FC00F592CD /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				789D13E425DD35FC00F592CD /* Define.swift */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		789D13E525DD35FC00F592CD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				789D13E625DD35FC00F592CD /* DataApiManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				789D13D125DD334300F592CD /* LaunchScreen.storyboard in Resources */,
+				789D13F725DD385200F592CD /* MyCell.xib in Resources */,
 				789D13CE25DD334300F592CD /* Assets.xcassets in Resources */,
 				789D13CC25DD334100F592CD /* Main.storyboard in Resources */,
 			);
@@ -207,8 +249,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				789D13C925DD334100F592CD /* ViewController.swift in Sources */,
+				789D13E725DD35FC00F592CD /* RepoModel.swift in Sources */,
+				789D13E925DD35FC00F592CD /* DataApiManager.swift in Sources */,
 				789D13C525DD334100F592CD /* AppDelegate.swift in Sources */,
+				789D13E825DD35FC00F592CD /* Define.swift in Sources */,
+				789D13F625DD385200F592CD /* MyCell.swift in Sources */,
 				789D13C725DD334100F592CD /* SceneDelegate.swift in Sources */,
+				789D13EC25DD363300F592CD /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
