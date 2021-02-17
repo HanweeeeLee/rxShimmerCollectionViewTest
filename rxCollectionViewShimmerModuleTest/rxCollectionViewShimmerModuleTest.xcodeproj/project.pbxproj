@@ -19,6 +19,8 @@
 		789D13EC25DD363300F592CD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789D13EB25DD363300F592CD /* ViewModel.swift */; };
 		789D13F625DD385200F592CD /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789D13F425DD385200F592CD /* MyCell.swift */; };
 		789D13F725DD385200F592CD /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 789D13F525DD385200F592CD /* MyCell.xib */; };
+		789D142D25DD424000F592CD /* MyCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789D142C25DD424000F592CD /* MyCollectionView.swift */; };
+		789D143125DD569100F592CD /* MyNewCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789D143025DD569100F592CD /* MyNewCollectionView.swift */; };
 		824440E69AA03019D3C2E4FF /* Pods_rxCollectionViewShimmerModuleTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D22A458F46451B41175B0C /* Pods_rxCollectionViewShimmerModuleTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		789D13EB25DD363300F592CD /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		789D13F425DD385200F592CD /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 		789D13F525DD385200F592CD /* MyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
+		789D142C25DD424000F592CD /* MyCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionView.swift; sourceTree = "<group>"; };
+		789D143025DD569100F592CD /* MyNewCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNewCollectionView.swift; sourceTree = "<group>"; };
 		876FB1B9837D4B4B57B6625C /* Pods-rxCollectionViewShimmerModuleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rxCollectionViewShimmerModuleTest.debug.xcconfig"; path = "Target Support Files/Pods-rxCollectionViewShimmerModuleTest/Pods-rxCollectionViewShimmerModuleTest.debug.xcconfig"; sourceTree = "<group>"; };
 		E0D22A458F46451B41175B0C /* Pods_rxCollectionViewShimmerModuleTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rxCollectionViewShimmerModuleTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -105,6 +109,8 @@
 				789D13D225DD334300F592CD /* Info.plist */,
 				789D13F425DD385200F592CD /* MyCell.swift */,
 				789D13F525DD385200F592CD /* MyCell.xib */,
+				789D143025DD569100F592CD /* MyNewCollectionView.swift */,
+				789D142C25DD424000F592CD /* MyCollectionView.swift */,
 			);
 			path = rxCollectionViewShimmerModuleTest;
 			sourceTree = "<group>";
@@ -249,10 +255,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				789D13C925DD334100F592CD /* ViewController.swift in Sources */,
+				789D143125DD569100F592CD /* MyNewCollectionView.swift in Sources */,
 				789D13E725DD35FC00F592CD /* RepoModel.swift in Sources */,
 				789D13E925DD35FC00F592CD /* DataApiManager.swift in Sources */,
 				789D13C525DD334100F592CD /* AppDelegate.swift in Sources */,
 				789D13E825DD35FC00F592CD /* Define.swift in Sources */,
+				789D142D25DD424000F592CD /* MyCollectionView.swift in Sources */,
 				789D13F625DD385200F592CD /* MyCell.swift in Sources */,
 				789D13C725DD334100F592CD /* SceneDelegate.swift in Sources */,
 				789D13EC25DD363300F592CD /* ViewModel.swift in Sources */,
