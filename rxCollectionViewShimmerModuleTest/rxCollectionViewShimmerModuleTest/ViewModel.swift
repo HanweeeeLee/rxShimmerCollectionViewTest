@@ -70,6 +70,7 @@ class ViewModel: GithubViewModelInput, GithubViewModelOutput, GithubViewModelTyp
                         self.isLoading.onNext(false)
                 } onError: { (err) in
                     print("err:\(err)")
+                    self.isLoading.onNext(false)
                     self.error = Observable.just(err as NSError)
                 } onCompleted: {
                     
