@@ -263,13 +263,19 @@ extension HWCollectionView: UICollectionViewDataSource {
     }
       
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShimmerCellCollectionViewCell", for: indexPath) as! ShimmerCellCollectionViewCell
-        if self.isShimmering {
-            (cell as HWShimmerCollectionViewCellProtocol).startShimmer()
+        guard let identifier = self.delegate?.shimmerCollectionViewCellIdentifier(self) else {
+            return UICollectionViewCell()
         }
-        else {
-            (cell as HWShimmerCollectionViewCellProtocol).endShimmer()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
+        if let shimmerCell = (cell as? HWShimmerCollectionViewCellProtocol) {
+            if self.isShimmering {
+                (shimmerCell as HWShimmerCollectionViewCellProtocol).startShimmer()
+            }
+            else {
+                (shimmerCell as HWShimmerCollectionViewCellProtocol).endShimmer()
+            }
         }
+
         return cell
     }
     
